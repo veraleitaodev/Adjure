@@ -10,8 +10,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% endblock %}
-    
-    <title>Adjure</title>
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block corecss %}
+    {% endblock %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block corejs %}
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <title>Adjure {% block extra_title %}
+        {% endblock %}</title>
 </head>
 <body>
     <h1>Hello World</h1>
